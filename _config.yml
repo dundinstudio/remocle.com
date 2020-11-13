@@ -1,2 +1,6 @@
 title: Remocle - Timezone Visualizer
 description: With Remocle, you can find out exact time from multiple timezones at a glance!
+
+url: https://remocle.com
+plugins:
+  - jekyll-sitemap
