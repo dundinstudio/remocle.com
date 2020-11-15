@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{page.lang}}">
 <head>
   <title>Remocle - Timezone Visualizer</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{site.description}}">
-  <meta name="keywords" content="Remocle, Timezone"/>
+  <meta name="description" content="{{page.description | default: site.description}}">
+  <meta name="keywords" content="{{page.keywords}}"/>
 
-  <meta property="og:title" content="{{site.title}}">
+  <meta property="og:title" content="{{page.title | default: site.title}}">
   <meta property="og:site_name" content="{{site.title}}">
-  <meta property="og:url" content="https://remocle.com">
-  <meta property="og:description" content="{{site.description}}">
+  <meta property="og:url" content="{{site.url | append: page.url | replace: '.html', ''}}">
+  <meta property="og:description" content="{{page.description | default: site.description}}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://remocle.com/images/open-graph.jpg">
 
@@ -33,7 +33,7 @@
       "name": "Remocle",
       "sameAs": [
         "https://play.google.com/store/apps/details?id=com.dundinstudio.remocle",
-        "https://apps.apple.com/us/app/id1522259532"
+        "https://apps.apple.com/app/id1522259532"
       ]
     }
   </script>
