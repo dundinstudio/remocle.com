@@ -1,20 +1,68 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{site.title}}</title>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{site.description}}">
+  <meta name="keywords" content="Remocle, Timezone"/>
+
+  <meta property="og:title" content="{{site.title}}">
+  <meta property="og:site_name" content="{{site.title}}">
+  <meta property="og:url" content="{{site.url}}">
+  <meta property="og:description" content="{{site.description}}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://remocle.com/images/open-graph.jpg">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/screen.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://remocle.com",
+      "name": "Remocle",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.dundinstudio.remocle",
+        "https://apps.apple.com/app/id1522259532"
+      ]
+    }
+  </script>
+</head>
+<body>
+<header id="mainHeader">
+  <div class="container">
+    <div class="company-name">
+      <a href="#top">
+        <span class="dark-logo"><img width="104" height="38" src="images/logo/dark.svg" alt="Remocle logo"></span>
+        <span class="light-logo"><img width="104" height="38" src="images/logo/light.svg" alt="Remocle logo"></span>
+      </a>
+    </div>
+  </div>
+</header>
 <section id="top" class="hero" style="background-image: url(images/hero.jpg)">
   <div class="inner-hero text-container">
     <div class="hero-text-container">
       <h1 class="editable">Remocle</h1>
       <p class="subtext editable">
-          Find the exact moment in different time zones at a glance! Remocle is the world clock & time converter you have been looking for!</p>
-      <div class="cta button alt"><a href="https://apps.apple.com/us/app/id1522259532"><i class="ri-apple-fill"></i> App Store</a></div>
+        Find the exact moment in different time zones at a glance! Remocle is the world clock & time converter you have been looking for!</p>
+      <div class="cta button alt"><a href="https://apps.apple.com/app/id1522259532"><i class="ri-apple-fill"></i> App Store</a></div>
       <div class="cta button alt"><a href="https://play.google.com/store/apps/details?id=com.dundinstudio.remocle"><i class="ri-google-play-fill"></i> Google Play</a></div>
     </div>
   </div>
   <div class="learn-more"><a href="#learn-more">Learn more <i class="ri-arrow-down-s-line"></i></a></div>
 </section>
-
 <div class="content">
   <section class="info" id="learn-more">
     <div class="container flex">
@@ -27,7 +75,6 @@ layout: default
       </div>
     </div>
   </section>
-
   <section class="info">
     <div class="container flex">
       <div class="text">
@@ -44,14 +91,13 @@ layout: default
     <div class="container flex">
       <div class="text">
         <h2 class="editable">Add a schedule</h2>
-          <p class="editable">You can add a schedule for a timeline. Schedule in each timeline can be compared with schedules in other timezones.</p>
+        <p class="editable">You can add a schedule for a timeline. Schedule in each timeline can be compared with schedules in other timezones.</p>
       </div>
       <div class="image">
         <img class="editable" src="images/screenshot3.png" alt="Screenshot"/>
       </div>
     </div>
   </section>
-
   <section class="info">
     <div class="container flex">
       <div class="text">
@@ -63,7 +109,6 @@ layout: default
       </div>
     </div>
   </section>
-
   <section class="info">
     <div class="container flex">
       <div class="text">
@@ -75,15 +120,25 @@ layout: default
       </div>
     </div>
   </section>
-
   <section class="hero bottom">
     <div class="inner-hero text-container">
       <div class="hero-text-container">
         <h2 class="editable">Remocle</h2>
         <p class="subtext editable">Timezone Visualizer</p>
-        <div class="cta button alt"><a href="https://apps.apple.com/us/app/id1522259532"><i class="ri-apple-fill"></i> App Store</a></div>
+        <div class="cta button alt"><a href="https://apps.apple.com/app/id1522259532"><i class="ri-apple-fill"></i> App Store</a></div>
         <div class="cta button alt"><a href="https://play.google.com/store/apps/details?id=com.dundinstudio.remocle"><i class="ri-google-play-fill"></i> Google Play</a></div>
       </div>
     </div>
   </section>
 </div>
+<footer>
+  <div class="container">
+    <p class="copyright">
+      © DUNDIN STUDIO
+    </p>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
