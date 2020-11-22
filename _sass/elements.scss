@@ -49,9 +49,20 @@ h2 a {
 	}
 }
 
-p, address, ul {
+p, address, ul, ol {
 	font-size: 1.38em;
 	margin-bottom: 20px;
 	font-weight: 300;
 	line-height: 1.6em;
+}
+
+
+.content.page  {
+	h1 {
+		font-size: 1.8em;
+	}
+
+	p, address, ul, ol {
+		font-size: 1em;
+	}
 }

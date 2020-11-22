@@ -31,6 +31,7 @@ header {
   width: 100%;
   z-index: 9999;
   line-height: 0;
+  top: 0;
 
   .container {
     line-height: 0;
@@ -91,6 +92,10 @@ header {
       width: auto;
     }
   }
+}
+
+.menu-content-inset {
+  height: 70px;
 }
 
 .content {
@@ -192,4 +197,8 @@ i {
 
 ul.summary {
   font-size: 1.1em;
+}
+
+pre {
+  white-space: pre-wrap;
 }

@@ -1,7 +1,6 @@
 footer {
 	font-size: .6em;
 	position: relative;
-	color: #fff;
 
 	&,
 	a {
@@ -11,10 +10,6 @@ footer {
 	a {
 		text-decoration: none;
 		padding: 0 10px;
-
-		&:hover {
-			color: #fff;
-		}
 	}
 
 	ul {
@@ -22,14 +17,19 @@ footer {
 		margin: 0;
 
 		&.footer-right-links {
-			float: left;
+			text-align: center;
 			@media #{$tablet} {
 				float: right;
+				text-align: inherit;
 			}
 		}
 
 		&.footer-left-links {
-			float: left;
+			text-align: center;
+			@media #{$tablet} {
+				float: left;
+				text-align: inherit;
+			}
 		}
 
 		li {
@@ -83,21 +83,5 @@ footer {
 				}
 			}
 		}
-	}
-}
-
-.copyright {
-	margin: 15px auto;
-	float: left;
-
-	a {
-		color: #999;
-	}
-
-	@media #{$desktop} {
-		text-align: center;
-		float: none;
-		padding: 16px 0;
-		margin: 0;
 	}
 }

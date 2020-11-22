@@ -39,6 +39,7 @@
   </script>
 </head>
 <body>
+{% if page.hero == true %}
 <header id="mainHeader">
   <div class="container">
     <div class="company-name">
@@ -49,12 +50,29 @@
     </div>
   </div>
 </header>
+{% else %}
+<header class="header-background">
+  <div class="container">
+    <div class="company-name">
+      <a href="/">
+        <span class="dark-logo"><img width="104" height="38" src="images/logo/dark.svg" alt="Remocle logo"></span>
+      </a>
+    </div>
+  </div>
+</header>
+{% endif %}
+
 {{ content }}
 <footer>
   <div class="container">
-    <p class="copyright">
-      © DUNDIN STUDIO
-    </p>
+    <ul class="footer-right-links">
+      <li><a href="/open-source-license">Open Source License</a></li>
+      <li><a href="/privacy-statement">Privacy Statement</a></li>
+    </ul>
+
+    <ul class="footer-left-links">
+      <li>© DUNDIN STUDIO</li>
+    </ul>
   </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
