@@ -56,6 +56,10 @@ p, address, ul, ol {
 	line-height: 1.6em;
 }
 
+pre {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
 
 .content.page  {
 	h1 {
@@ -66,3 +70,4 @@ p, address, ul, ol {
 		font-size: 1em;
 	}
 }
+
